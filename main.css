@@ -122,6 +122,12 @@ nav.stickyadd .nav-item a:hover {
     font-size: 1.1rem;
 }
 
+/* Photography */
+
+.photography-content a {
+    color: var(--teal-color);
+}
+
 /* Sign Up */
 
 .sign-up {
