@@ -30,7 +30,7 @@ h2{
 h3{
     font-size: 1.3rem;
     font-weight: 900;
-    color: var(--teal-color);
+    color: var(--blue-color);
     text-transform: uppercase;
 }
 h4{
@@ -93,6 +93,23 @@ nav.stickyadd .nav-item a:hover {
 .navigation a:hover{
     color: var(--blue-color);
 }
+
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+      .home-btn {
+          display: none;
+      }
+      .navbar {
+        background-color: rgba(255,255,255,0.9);
+      }
+      .nav-item .nav-link {
+        color: rgba(0,18,48,0.7);
+      }
+}
+
 /* Hero Section */
 
 .hero {
@@ -122,6 +139,16 @@ nav.stickyadd .nav-item a:hover {
     font-size: 1.1rem;
 }
 
+.h3-title {
+    color: var(--teal-color);
+    text-transform: uppercase;
+}
+.h3-subtitle {
+    color: white;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
 /* Photography */
 
 .photography-content a {
@@ -135,7 +162,7 @@ nav.stickyadd .nav-item a:hover {
 }
 
 .signup-content p, label{
-    color: #7D7D7D;
+    color: #424242;
 }
 /* Footer */
 
@@ -184,6 +211,14 @@ nav.stickyadd .nav-item a:hover {
 
 .btn-iceland { 
     color: #ffffff; 
+    background-color: var(--blue-color); 
+    font-family: source-sans-pro, sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+  } 
+
+  .btn-iceland2 { 
+    color: #ffffff; 
     background-color: #30B5A8; 
     border-color: #067B6F; 
     font-family: source-sans-pro, sans-serif;
@@ -196,6 +231,14 @@ nav.stickyadd .nav-item a:hover {
   .btn-iceland:active, 
   .btn-iceland.active, 
   .open .dropdown-toggle.btn-iceland { 
+    color: #ffffff; 
+    background-color: #30B5A8; 
+  } 
+  .btn-iceland2:hover, 
+  .btn-iceland2:focus, 
+  .btn-iceland2:active, 
+  .btn-iceland2.active, 
+  .open .dropdown-toggle.btn-iceland2 { 
     color: #ffffff; 
     background-color: #007A6D; 
     border-color: #067B6F; 
